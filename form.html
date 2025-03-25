@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <style>
+        body{
+            background-color: blueviolet;
+            height: 100vh;
+        }
+        div{
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 5px solid black;
+            border-radius: 10px;
+            position: absolute;
+            width: 400px;
+            padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        }
+    label{
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <script>
+    function Data(){ 
+       var a = document.getElementById("n1").value;
+       var b = document.getElementById("n2").value;
+       var c= document.getElementById("n3").value;
+
+       if(a==""||b==""||c==""){
+        alert("Fields Can't Be Empty");
+        return false;
+       }
+
+       else if(b!=c){
+        alert("Password Should Be Same");
+        return false;
+       }
+       else if(isNaN(b)){
+        alert("Only Number Allowed");
+        return false;
+       }
+       else{
+        true;
+       }
+
+    }
+
+       
+    </script>
+    <div>
+        <form onsubmit=" return Data()" action="abc.html">
+            <label for="user">UserID</label>
+            <input type="text" class="form-control w-100" id="n1"><br>
+            <label for="user">Password</label>
+            <input type="password" class="form-control  w-100"  id="n3"><br>z
+            <label for="user">Confirm Password</label>
+            <input type="password" class="form-control  w-100" id="n4"><br>
+            <input type="submit"class="form-control  w-50 text-center btn btn-danger"  id="n4"><br><br>
+            </form>
+    </div>
+</body>
+</html>

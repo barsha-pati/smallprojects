@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: aqua;
+        }
+        .social-icon{
+            height: 70px;
+            width: 70px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        form{
+            text-align: center;
+            background-color:white;
+            margin-left: auto;
+            margin-right: auto;
+            width: 650px;
+            border: 2px solid black;
+            margin-bottom: auto;
+            text-align: center;
+        }
+     
+        .input-box{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border: 0px;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+
+        }
+        #input-wrapper{
+            padding-top: 80px;
+            padding-bottom:40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        #submit{
+            background-color: blue;
+            font-size: 18px;
+            color:white;
+            border-radius: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 24px;
+            padding-left: 24px;
+            margin-bottom: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 style="margin-top: 10px; padding-top: 10px;">Register</h1>
+        <div>
+            <img src="../public/images/fb.png" alt="fb" class="social-icon">
+            <img src="../public/images/link.png" alt="link" class="social-icon">
+            <img src="../public/images/wp.png" alt="wp" class="social-icon">
+            <img src="../public/images/yt.png" alt="yt" class="social-icon">
+        </div>
+        <div id="input-wrapper">
+            <input type="text" placeholder="Username" name="username" class="input-box">
+            <br>
+            <input type="email" placeholder="Email" name="username"  class="input-box">
+            <br>
+            <input type="password" placeholder="Password" name="username"  class="input-box">
+            <br>
+            <input type="password" placeholder="Confirm Password" name="username"  class="input-box">
+        </div>
+        <input type="submit" value="Register" id="submit">
+    </form>
+</body>
+</html>
